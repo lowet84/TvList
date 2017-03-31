@@ -44,7 +44,8 @@
     <Compile Include="Converters\TappedItemEventArgsToTappedItemConverter.cs" />
     <Compile Include="Converters\SelectedItemEventArgsToSelectedItemConverter.cs" />
     <Compile Include="Utils\RelayCommand.cs" />
-    <Compile Include="ViewCells\TvGuideItem.xaml.cs">
+    <Compile Include="Views\HliItemsView.cs" />
+    <Compile Include="Views\TvGuideItem.xaml.cs">
       <DependentUpon>TvGuideItem.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
@@ -139,7 +140,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ViewCells\TvGuideItem.xaml">
+    <EmbeddedResource Include="Views\TvGuideItem.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

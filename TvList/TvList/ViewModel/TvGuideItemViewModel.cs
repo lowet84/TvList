@@ -18,5 +18,22 @@ namespace TvList.ViewModel
         }
 
         public string Name => _item.Name;
+
+        public IEnumerable<Programme> ShortGuide => GetShortGuide();
+
+        private List<Programme> GetShortGuide()
+        {
+            return GetFutureGuide().Take(3).ToList();
+        }
+
+        private List<Programme> GetFullGuide()
+        {
+            return _item.jsontv.programme;
+        }
+
+        private List<Programme> GetFutureGuide()
+        {
+            return GetFullGuide().Where(d => d.StartDateTime > DateTime.Now).ToList();
+        }
     }
 }

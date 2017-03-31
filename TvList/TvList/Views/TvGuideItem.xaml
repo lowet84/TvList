@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:utils="clr-namespace:TvList.Utils;assembly=TvList"
+             xmlns:views="clr-namespace:TvList.Views;assembly=TvList"
+             x:Class="TvList.Views.TvGuideItem">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Text="{Binding Name}"></Label>
+        <views:HliItemsView Grid.Column="1" ItemsSource="{Binding ShortGuide}" Orientation="Vertical">
+            <views:HliItemsView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="{Binding Name}" Margin="0,0,0,-10"/>
+                        <Label Text="{Binding TimeText}" FontSize="9" Margin="0,0,0,-5"/>
+                    </StackLayout>
+                </DataTemplate>
+            </views:HliItemsView.ItemTemplate>
+        </views:HliItemsView>
+    </Grid>
+</ViewCell>
