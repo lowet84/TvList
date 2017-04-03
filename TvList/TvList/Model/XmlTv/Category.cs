@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace TvList.Model.XmlTv
+namespace TvList.Model
 {
     public class Category
     {

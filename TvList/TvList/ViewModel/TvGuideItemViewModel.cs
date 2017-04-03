@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TvList.Model.XmlTv;
+using TvList.Model;
 using XLabs;
 
 namespace TvList.ViewModel
@@ -33,7 +33,7 @@ namespace TvList.ViewModel
 
         private List<Programme> GetFutureGuide()
         {
-            return GetFullGuide().Where(d => d.StartDateTime > DateTime.Now).ToList();
+            return GetFullGuide().Where(d => d.EndDateTime > DateTime.Now).ToList();
         }
     }
 }

@@ -1,4 +1,4 @@
-namespace TvList.Model.XmlTv
+namespace TvList.Model
 {
     public class Director
     {

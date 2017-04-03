@@ -5,10 +5,9 @@ using Newtonsoft.Json;
 using TvList.Utils;
 using Xamarin.Forms;
 
-namespace TvList.Model.XmlTv
+namespace TvList.Model
 {
-    [DebuggerDisplay("{title.sv}")]
-    public class Programme
+    public partial class Programme
     {
         public Category category { get; set; }
         public string start { get; set; }
@@ -25,16 +24,6 @@ namespace TvList.Model.XmlTv
         public Rating rating { get; set; }
         public List<string> url { get; set; }
         public List<string> country { get; set; }
-
-
-        [JsonIgnore]
-        public string TimeText => $"{StartDateTime.Hour:00}:{StartDateTime.Minute:00}-{EndDateTime.Hour:00}:{EndDateTime.Minute:00}";
-        [JsonIgnore]
-        public string Name => title.sv;
-        [JsonIgnore]
-        public DateTime StartDateTime => ConverterUtil.UnixTimeStampToDateTime(double.Parse(start));
-        [JsonIgnore]
-        public DateTime EndDateTime => ConverterUtil.UnixTimeStampToDateTime(double.Parse(stop));
     }
 
     

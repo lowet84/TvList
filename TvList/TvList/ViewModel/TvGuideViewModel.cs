@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using TvList.Model.XmlTv;
+using TvList.Model;
 using TvList.Utils;
 
 namespace TvList.ViewModel

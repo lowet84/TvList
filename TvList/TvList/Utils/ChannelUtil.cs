@@ -6,7 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using TvList.Model;
-using TvList.Model.XmlTv;
+using TvList.Model;
 using Xamarin.Forms;
 
 namespace TvList.Utils

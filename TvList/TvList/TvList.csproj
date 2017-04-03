@@ -39,6 +39,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\FocusedEventArgsToFocusedConverter.cs" />
+    <Compile Include="Model\Programme.cs" />
+    <Compile Include="Model\XmlTvRootObject.cs" />
     <Compile Include="Utils\BehaviorBase.cs" />
     <Compile Include="Utils\EventToCommandBehavior.cs" />
     <Compile Include="Converters\TappedItemEventArgsToTappedItemConverter.cs" />

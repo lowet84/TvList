@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Plugin.Settings;
 using Plugin.Settings.Abstractions;
 using TvList.Model;
-using TvList.Model.XmlTv;
+using TvList.Model;
 using TvList.Utils;
 
 namespace TvList.Droid.Helpers

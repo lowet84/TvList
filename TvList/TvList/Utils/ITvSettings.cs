@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using TvList.Model;
-using TvList.Model.XmlTv;
+using TvList.Model;
 
 namespace TvList.Utils
 {
